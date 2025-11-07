@@ -1,0 +1,3 @@
+ERROR	2025/11/07 11:03:38 main.go:48: listen tcp :4000: bind: address already in use
+ERROR	2025/11/07 11:16:47 main.go:51: listen tcp :4000: bind: address already in use
+ERROR	2025/11/07 11:35:14 handlers.go:24: open ./ui/html/base.html.tmpl: no such file or directory
