@@ -13,7 +13,6 @@ type application struct {
 }
 
 func main() {
-	mux := http.NewServeMux()
 
 	addr := flag.String("addr", ":4000", "HTTP Network Address")
 
@@ -43,17 +42,9 @@ func main() {
 		errorLog: errorLog,
 	}
 
-	fileServer := http.FileServer(http.Dir("./ui/static/"))
-
-	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
-
-	mux.HandleFunc("/", app.home)
-	mux.HandleFunc("/snippet/view", app.snippetView)
-	mux.HandleFunc("/snippet/create", app.snippetCreate)
-
 	srv := http.Server{
 		Addr:     *addr,
-		Handler:  mux,
+		Handler:  app.route(),
 		ErrorLog: errorLog,
 	}
 
