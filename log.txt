@@ -1,6 +1,7 @@
-INFO	2025/11/07 11:03:38 Starting server on :4000
-INFO	2025/11/07 11:16:32 Starting server on :4000
-INFO	2025/11/07 11:16:47 Starting server on :4000
-INFO	2025/11/07 11:35:06 Starting server on :4000
-INFO	2025/11/07 13:26:53 Starting server on :4000
-INFO	2025/11/07 13:28:25 Starting server on :4000
+INFO	2025/11/08 16:01:37 Starting server on :4000
+INFO	2025/11/08 16:01:46 Starting server on :4000
+ERROR	2025/11/08 16:01:46 main.go:67: ListenAndServe: listen tcp :4000: bind: address already in use
+INFO	2025/11/08 16:01:52 Shutting down server...
+INFO	2025/11/08 16:01:52 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
