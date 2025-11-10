@@ -5,3 +5,414 @@ INFO	2025/11/08 16:01:52 Shutting down server...
 INFO	2025/11/08 16:01:52 Server stopped gracefully
 
 ---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 16:08:39 Starting server on :4000
+INFO	2025/11/09 16:21:35 Shutting down server...
+INFO	2025/11/09 16:21:35 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 16:21:36 Starting server on :4000
+ERROR	2025/11/09 16:21:38 handlers.go:65: template: view.html.tmpl:1:29: executing "title$htmltemplate_stateRCDATA_elementTitle" at <.ID>: can't evaluate field ID in type *main.templateData
+goroutine 11 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00010e000, {0x9656b8, 0xc0000e81e0}, {0x962dc0?, 0xc0000468c0?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).snippetView(0xc00010e000, {0x9656b8, 0xc0000e81e0}, 0xc0000243d0?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:65 +0x27b
+net/http.HandlerFunc.ServeHTTP(0xc000112000?, {0x9656b8?, 0xc0000e81e0?}, 0x727f56?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x9656b8, 0xc0000e81e0}, 0xc0000e4280)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc00007a3c0?}, {0x9656b8?, 0xc0000e81e0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0000de240, {0x965cb8, 0xc0000a17a0})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 10
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+ERROR	2025/11/09 16:21:38 server.go:3677: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:13)
+ERROR	2025/11/09 16:21:39 handlers.go:65: template: view.html.tmpl:1:29: executing "title$htmltemplate_stateRCDATA_elementTitle" at <.ID>: can't evaluate field ID in type *main.templateData
+goroutine 11 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00010e000, {0x9656b8, 0xc0001184b0}, {0x962dc0?, 0xc000046b20?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).snippetView(0xc00010e000, {0x9656b8, 0xc0001184b0}, 0xc0001140d0?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:65 +0x27b
+net/http.HandlerFunc.ServeHTTP(0xc000112000?, {0x9656b8?, 0xc0001184b0?}, 0x727f56?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x9656b8, 0xc0001184b0}, 0xc00013a000)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc00007a3c0?}, {0x9656b8?, 0xc0001184b0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0000de240, {0x965cb8, 0xc0000a17a0})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 10
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+ERROR	2025/11/09 16:21:39 server.go:3677: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:13)
+ERROR	2025/11/09 16:21:40 handlers.go:65: template: view.html.tmpl:1:29: executing "title$htmltemplate_stateRCDATA_elementTitle" at <.ID>: can't evaluate field ID in type *main.templateData
+goroutine 11 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00010e000, {0x9656b8, 0xc000118690}, {0x962dc0?, 0xc0001b4240?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).snippetView(0xc00010e000, {0x9656b8, 0xc000118690}, 0xc000114160?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:65 +0x27b
+net/http.HandlerFunc.ServeHTTP(0xc000112000?, {0x9656b8?, 0xc000118690?}, 0x727f56?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x9656b8, 0xc000118690}, 0xc00013a140)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc00007a3c0?}, {0x9656b8?, 0xc000118690?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0000de240, {0x965cb8, 0xc0000a17a0})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 10
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+ERROR	2025/11/09 16:21:40 server.go:3677: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:13)
+ERROR	2025/11/09 16:21:42 handlers.go:65: template: view.html.tmpl:1:29: executing "title$htmltemplate_stateRCDATA_elementTitle" at <.ID>: can't evaluate field ID in type *main.templateData
+goroutine 11 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00010e000, {0x9656b8, 0xc000118870}, {0x962dc0?, 0xc00013e300?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).snippetView(0xc00010e000, {0x9656b8, 0xc000118870}, 0xc0001141d0?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:65 +0x27b
+net/http.HandlerFunc.ServeHTTP(0xc000112000?, {0x9656b8?, 0xc000118870?}, 0x727f56?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x9656b8, 0xc000118870}, 0xc00013a280)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc00007a3c0?}, {0x9656b8?, 0xc000118870?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0000de240, {0x965cb8, 0xc0000a17a0})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 10
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+ERROR	2025/11/09 16:21:42 server.go:3677: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:13)
+INFO	2025/11/09 16:21:44 Shutting down server...
+INFO	2025/11/09 16:21:44 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 16:23:19 Starting server on :4000
+INFO	2025/11/09 16:26:12 Shutting down server...
+INFO	2025/11/09 16:26:12 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 16:26:12 Starting server on :4000
+INFO	2025/11/09 16:28:42 Shutting down server...
+INFO	2025/11/09 16:28:42 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 16:29:08 Starting server on :4000
+INFO	2025/11/09 16:29:28 Shutting down server...
+INFO	2025/11/09 16:29:28 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 16:29:29 Starting server on :4000
+INFO	2025/11/09 21:26:53 Shutting down server...
+INFO	2025/11/09 21:26:53 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 21:39:58 Starting server on :4000
+INFO	2025/11/09 21:50:31 Shutting down server...
+INFO	2025/11/09 21:50:31 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/09 21:52:23 Starting server on :4000
+INFO	2025/11/09 21:52:45 Shutting down server...
+INFO	2025/11/09 21:52:45 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 00:18:11 Starting server on :4000
+ERROR	2025/11/10 00:18:19 handlers.go:32: open ./ui/html/pages/home.html: no such file or directory
+goroutine 51 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc0000aa000, {0x965758, 0xc0001a00f0}, {0x962b20?, 0xc00021e960?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).home(0xc0000aa000, {0x965758, 0xc0001a00f0}, 0xc0001c2010?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:32 +0x1a8
+net/http.HandlerFunc.ServeHTTP(0xc0000ae000?, {0x965758?, 0xc0001a00f0?}, 0x727f56?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965758, 0xc0001a00f0}, 0xc000154280)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc00007a380?}, {0x965758?, 0xc0001a00f0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc000238090, {0x965d58, 0xc00021e210})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 50
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+INFO	2025/11/10 00:18:27 Shutting down server...
+INFO	2025/11/10 00:18:27 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 00:18:47 Starting server on :4000
+INFO	2025/11/10 00:19:49 Shutting down server...
+INFO	2025/11/10 00:19:49 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 00:19:49 Starting server on :4000
+INFO	2025/11/10 00:20:37 Shutting down server...
+INFO	2025/11/10 00:20:37 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+ERROR	2025/11/10 14:00:49 main.go:53: open .ui/html/pages/base.html.tmpl: no such file or directory
+ERROR	2025/11/10 14:01:43 main.go:53: open .ui/html/base.html.tmpl: no such file or directory
+ERROR	2025/11/10 14:02:03 main.go:53: open ./ui/html/pages/nav.html.tmpl: no such file or directory
+INFO	2025/11/10 14:03:18 Starting server on :4000
+INFO	2025/11/10 14:11:55 Shutting down server...
+INFO	2025/11/10 14:11:55 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:27:25 Starting server on :4000
+ERROR	2025/11/10 14:27:28 helpers.go:39: html/template: "base" is undefined
+goroutine 35 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00018e300, {0x965838, 0xc000172000}, {0x962300?, 0xc000024340?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).render(0xc00018e300, {0x965838, 0xc000172000}, 0xc8, {0x8be629, 0xe}, 0xc000046560)
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:39 +0x165
+main.(*application).home(0xc00018e300, {0x965838, 0xc000172000}, 0xc0001140e0?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:27 +0xf2
+net/http.HandlerFunc.ServeHTTP(0xc0001bc000?, {0x965838?, 0xc000172000?}, 0x6ba9b6?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965838, 0xc000172000}, 0xc00015c140)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc000152140?}, {0x965838?, 0xc000172000?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc000156090, {0x965e18, 0xc00013c210})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 34
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+ERROR	2025/11/10 14:27:28 server.go:3677: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:13)
+INFO	2025/11/10 14:30:27 Shutting down server...
+INFO	2025/11/10 14:30:27 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:30:30 Starting server on :4000
+ERROR	2025/11/10 14:30:43 helpers.go:37: html/template: "base" is undefined
+goroutine 21 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00018e300, {0x965838, 0xc0001580f0}, {0x962300?, 0xc0000243b0?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).render(0xc00018e300, {0x965838, 0xc0001580f0}, 0xc8, {0x8be629, 0xe}, 0xc000046600)
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:37 +0x13f
+main.(*application).home(0xc00018e300, {0x965838, 0xc0001580f0}, 0xc0000242f0?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:27 +0xf2
+net/http.HandlerFunc.ServeHTTP(0xc0001bc000?, {0x965838?, 0xc0001580f0?}, 0x6ba9b6?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965838, 0xc0001580f0}, 0xc0001e2140)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc00019cb00?}, {0x965838?, 0xc0001580f0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0001c4120, {0x965e18, 0xc0001ba750})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 20
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+ERROR	2025/11/10 14:30:43 server.go:3677: http: superfluous response.WriteHeader call from main.(*application).render (helpers.go:40)
+INFO	2025/11/10 14:31:00 Shutting down server...
+INFO	2025/11/10 14:31:00 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:31:01 Starting server on :4000
+ERROR	2025/11/10 14:31:02 helpers.go:37: html/template: "base" is undefined
+goroutine 11 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00018e300, {0x965838, 0xc000144000}, {0x962300?, 0xc000190640?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).render(0xc00018e300, {0x965838, 0xc000144000}, 0xc8, {0x8be629, 0xe}, 0xc00018e340)
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:37 +0x13f
+main.(*application).home(0xc00018e300, {0x965838, 0xc000144000}, 0xc000142010?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:27 +0xf2
+net/http.HandlerFunc.ServeHTTP(0xc0001bc000?, {0x965838?, 0xc000144000?}, 0x6ba9b6?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965838, 0xc000144000}, 0xc0001cc000)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc00019c9c0?}, {0x965838?, 0xc000144000?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0000de240, {0x965e18, 0xc0000a17a0})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 10
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+INFO	2025/11/10 14:33:39 Shutting down server...
+INFO	2025/11/10 14:33:39 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:33:41 Starting server on :4000
+INFO	2025/11/10 14:33:53 Shutting down server...
+INFO	2025/11/10 14:33:53 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:33:54 Starting server on :4000
+INFO	2025/11/10 14:34:15 Shutting down server...
+INFO	2025/11/10 14:34:15 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:34:16 Starting server on :4000
+INFO	2025/11/10 14:34:24 Shutting down server...
+INFO	2025/11/10 14:34:24 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:34:25 Starting server on :4000
+INFO	2025/11/10 14:36:50 Shutting down server...
+INFO	2025/11/10 14:36:50 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:36:51 Starting server on :4000
+INFO	2025/11/10 14:37:04 Shutting down server...
+INFO	2025/11/10 14:37:04 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:37:04 Starting server on :4000
+INFO	2025/11/10 14:37:25 Shutting down server...
+INFO	2025/11/10 14:37:25 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:37:25 Starting server on :4000
+ERROR	2025/11/10 14:37:28 helpers.go:37: html/template: "base" is undefined
+goroutine 19 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc0000ae300, {0x965838, 0xc0000de3c0}, {0x962300?, 0xc0000b06c0?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).render(0xc0000ae300, {0x965838, 0xc0000de3c0}, 0xc8, {0x8be629, 0xe}, 0xc0000ae420)
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:37 +0x13f
+main.(*application).home(0xc0000ae300, {0x965838, 0xc0000de3c0}, 0xc0000b0600?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:27 +0xf2
+net/http.HandlerFunc.ServeHTTP(0xc0000dc000?, {0x965838?, 0xc0000de3c0?}, 0x6ba9b6?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965838, 0xc0000de3c0}, 0xc0000f2140)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc0000bcac0?}, {0x965838?, 0xc0000de3c0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0000e4090, {0x965e18, 0xc0001a0210})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 34
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+ERROR	2025/11/10 14:37:30 helpers.go:37: html/template: "base" is undefined
+goroutine 19 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc0000ae300, {0x965838, 0xc0001be0f0}, {0x962300?, 0xc000184190?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).render(0xc0000ae300, {0x965838, 0xc0001be0f0}, 0xc8, {0x8be637, 0xe}, 0xc0001860a0)
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:37 +0x13f
+main.(*application).snippetView(0xc0000ae300, {0x965838, 0xc0001be0f0}, 0xc0001840d0?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:52 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc0000dc000?, {0x965838?, 0xc0001be0f0?}, 0x6ba9b6?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965838, 0xc0001be0f0}, 0xc0001bc000)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc0000bcac0?}, {0x965838?, 0xc0001be0f0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0000e4090, {0x965e18, 0xc0001a0210})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 34
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+INFO	2025/11/10 14:51:33 Shutting down server...
+INFO	2025/11/10 14:51:33 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:54:36 Starting server on :4000
+ERROR	2025/11/10 14:54:40 helpers.go:37: html/template: "base" is undefined
+goroutine 21 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc0001904a0, {0x965838, 0xc0000ea000}, {0x962300?, 0xc0000b80f0?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).render(0xc0001904a0, {0x965838, 0xc0000ea000}, 0xc8, {0x8be629, 0xe}, 0xc0000ca0e0)
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:37 +0x13f
+main.(*application).home(0xc0001904a0, {0x965838, 0xc0000ea000}, 0xc0000b8030?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:27 +0xf2
+net/http.HandlerFunc.ServeHTTP(0xc0001c0000?, {0x965838?, 0xc0000ea000?}, 0x6ba9b6?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965838, 0xc0000ea000}, 0xc0000c0000)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc0000ba000?}, {0x965838?, 0xc0000ea000?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc0001c8120, {0x965e18, 0xc0001bd6e0})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 20
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+INFO	2025/11/10 14:55:50 Shutting down server...
+INFO	2025/11/10 14:55:50 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:55:51 Starting server on :4000
+ERROR	2025/11/10 14:55:56 helpers.go:37: html/template: "base" is undefined
+goroutine 51 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:26 +0x5e
+main.(*application).serverError(0xc00018e340, {0x965838, 0xc00014c000}, {0x962300?, 0xc00014a0d0?})
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:10 +0x5a
+main.(*application).render(0xc00018e340, {0x965838, 0xc00014c000}, 0xc8, {0x8be629, 0xe}, 0xc00012e0c0)
+	/home/ilx/Desktop/snippetbox/cmd/web/helpers.go:37 +0x13f
+main.(*application).home(0xc00018e340, {0x965838, 0xc00014c000}, 0xc00014a010?)
+	/home/ilx/Desktop/snippetbox/cmd/web/handlers.go:27 +0xf2
+net/http.HandlerFunc.ServeHTTP(0xc0001ba000?, {0x965838?, 0xc00014c000?}, 0x6ba9b6?)
+	/usr/lib/go/src/net/http/server.go:2322 +0x29
+net/http.(*ServeMux).ServeHTTP(0x479e99?, {0x965838, 0xc00014c000}, 0xc00023e000)
+	/usr/lib/go/src/net/http/server.go:2861 +0x1c7
+net/http.serverHandler.ServeHTTP({0xc000234040?}, {0x965838?, 0xc00014c000?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:3340 +0x8e
+net/http.(*conn).serve(0xc000238090, {0x965e18, 0xc00021c210})
+	/usr/lib/go/src/net/http/server.go:2109 +0x665
+created by net/http.(*Server).Serve in goroutine 50
+	/usr/lib/go/src/net/http/server.go:3493 +0x485
+INFO	2025/11/10 14:56:28 Shutting down server...
+INFO	2025/11/10 14:56:28 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:56:28 Starting server on :4000
+ERROR	2025/11/10 14:56:32 server.go:3677: http: superfluous response.WriteHeader call from main.(*application).render (helpers.go:41)
+INFO	2025/11/10 14:56:59 Shutting down server...
+INFO	2025/11/10 14:56:59 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 14:57:00 Starting server on :4000
+INFO	2025/11/10 15:55:48 Shutting down server...
+INFO	2025/11/10 15:55:48 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 15:55:49 Starting server on :4000
+INFO	2025/11/10 16:02:38 Shutting down server...
+INFO	2025/11/10 16:02:38 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+ERROR	2025/11/10 16:02:39 main.go:53: template: home.html.tmpl:26: function "humanData" not defined
+INFO	2025/11/10 16:02:57 Starting server on :4000
+INFO	2025/11/10 16:03:25 Shutting down server...
+INFO	2025/11/10 16:03:25 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 16:03:26 Starting server on :4000
+INFO	2025/11/10 16:04:27 Shutting down server...
+INFO	2025/11/10 16:04:27 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 16:04:28 Starting server on :4000
+INFO	2025/11/10 17:08:29 Shutting down server...
+INFO	2025/11/10 17:08:29 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 17:08:31 Starting server on :4000
+INFO	2025/11/10 17:08:36 /
+INFO	2025/11/10 17:08:41 /snippet/view
+INFO	2025/11/10 17:09:00 Shutting down server...
+INFO	2025/11/10 17:09:00 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 17:09:00 Starting server on :4000
+INFO	2025/11/10 17:09:03 /snippet/view?id=6
+INFO	2025/11/10 17:09:07 /
+INFO	2025/11/10 17:09:10 /snippet/view?id=1
+INFO	2025/11/10 17:13:14 Shutting down server...
+INFO	2025/11/10 17:13:14 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
+INFO	2025/11/10 17:13:26 Starting server on :4000
+INFO	2025/11/10 17:14:37 Shutting down server...
+INFO	2025/11/10 17:14:37 Server stopped gracefully
+
+---------------------------------------- END ----------------------------------------
