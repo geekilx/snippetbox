@@ -2,7 +2,7 @@ package main
 
 import "net/http"
 
-func (app *application) route() *http.ServeMux {
+func (app *application) route() http.Handler {
 
 	mux := http.NewServeMux()
 
@@ -14,6 +14,6 @@ func (app *application) route() *http.ServeMux {
 	mux.HandleFunc("/snippet/view", app.snippetView)
 	mux.HandleFunc("/snippet/create", app.snippetCreate)
 
-	return mux
+	return app.logRequest(mux)
 
 }
